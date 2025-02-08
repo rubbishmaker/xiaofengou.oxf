@@ -13,7 +13,7 @@ const Dashboard = () => {
           <Breakline className='mt-10 mb-8' />
         </>
       )}
-      {featureSwich.dashboard_github &&
+      {/* {featureSwich.dashboard_github &&
         author.github_accounts &&
         author.github_accounts.length > 0 && (
           <div className='space-y-10'>
@@ -28,7 +28,7 @@ const Dashboard = () => {
                 />
               ))}
           </div>
-        )}
+        )} */}
     </>
   );
 };

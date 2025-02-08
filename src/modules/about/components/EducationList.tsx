@@ -15,11 +15,11 @@ const EducationList = ({
     <section className='space-y-6'>
       <div className='space-y-2'>
         <SectionHeading
-          title='Education'
+          title='教育'
           icon={<EducationIcon size={22} className='mr-1' />}
         />
         <SectionSubHeading>
-          <p className='dark:text-neutral-400'>My educational journey.</p>
+          <p className='dark:text-neutral-400'>我的母校</p>
         </SectionSubHeading>
       </div>
 

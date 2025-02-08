@@ -5,13 +5,11 @@ import BlogPreview from './BlogPreview';
 import Introduction from './Introduction';
 import Services from './Services';
 
-const Home = ({ blogList }: { blogList: BlogItemProps[] }) => {
+const Home = () => {
   return (
     <>
       <Introduction />
       <Breakline className='mt-8 mb-7' />
-      <BlogPreview blogList={blogList} />
-      <Breakline className='my-8' />
       <Services />
     </>
   );

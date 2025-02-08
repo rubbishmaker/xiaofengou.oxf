@@ -9,8 +9,7 @@ import { EducationProps } from '@/common/types/education';
 import { siteMetadata } from '@/contents/siteMetadata';
 import About from '@/modules/about';
 const PAGE_TITLE = 'About';
-const PAGE_DESCRIPTION =
-  'A short story of me, not important but seem better than nothing.';
+const PAGE_DESCRIPTION = '关于我的简介';
 
 interface About {
   content: string;

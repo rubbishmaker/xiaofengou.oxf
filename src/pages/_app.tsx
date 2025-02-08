@@ -12,7 +12,6 @@ import '@/common/styles/globals.css';
 import '@/common/styles/link-icon.css';
 import '@/contents/custom.css';
 
-import CommandPalette from '@/common/components/elements/CommandPalette';
 import Layout from '@/common/components/layouts';
 import { CommandPaletteProvider } from '@/common/context/CommandPaletteContext';
 import { firaCode, jakartaSans, soraSans } from '@/common/styles/fonts';
@@ -48,7 +47,6 @@ const App = ({ Component, pageProps: { session, ...pageProps } }: AppProps) => {
         <ThemeProvider attribute='class' defaultTheme='dark'>
           <CommandPaletteProvider>
             <Layout>
-              <CommandPalette />
               <ProgressBar />
               <Component {...pageProps} />
             </Layout>

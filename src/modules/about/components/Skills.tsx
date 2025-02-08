@@ -40,11 +40,11 @@ const Skills = () => {
     <div className='space-y-8'>
       <div className='space-y-2'>
         <SectionHeading
-          title='Skills'
+          title='技能'
           icon={<SkillsIcon size={22} className='mr-1' />}
         />
         <SectionSubHeading>
-          <p className='dark:text-neutral-400'>My professional skills.</p>
+          <p className='dark:text-neutral-400'>我追求的技能</p>
         </SectionSubHeading>
       </div>
 

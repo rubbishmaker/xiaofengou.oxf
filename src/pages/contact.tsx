@@ -8,8 +8,7 @@ import Contact from '@/modules/contact';
 import { siteMetadata } from '../contents/siteMetadata';
 
 const PAGE_TITLE = 'Contact';
-const PAGE_DESCRIPTION =
-  "Feel free to get in touch and let's have a discussion about how we can work together.";
+const PAGE_DESCRIPTION = '请随时与我联系';
 
 const ContactPage: NextPage = () => {
   return (

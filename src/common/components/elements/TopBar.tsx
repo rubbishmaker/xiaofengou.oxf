@@ -7,7 +7,7 @@ const TopBar = () => {
 
   const lightBg = 'linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%)';
   const darkBg = 'linear-gradient(to top, #b224ef 0%, #7579ff 100%)';
-  const bg = resolvedTheme === 'light' ? lightBg : darkBg
+  const bg = resolvedTheme === 'light' ? lightBg : darkBg;
 
   return (
     <div
@@ -15,7 +15,7 @@ const TopBar = () => {
       style={{ backgroundImage: bg }}
     >
       <span>🌟🍺✨🎉</span>
-      <span>你好，2024</span>
+      <span>你好，2025</span>
       <span>🎉✨🍺🌟</span>
       <a
         href={siteMetadata.siteUrl}
