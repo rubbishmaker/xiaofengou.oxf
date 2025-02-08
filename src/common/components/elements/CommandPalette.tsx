@@ -16,9 +16,7 @@ import useIsMobile from '@/common/hooks/useIsMobile';
 import { MenuItemProps } from '@/common/types/menu';
 import { EXTERNAL_LINKS, MENU_ITEMS, SOCIAL_MEDIA } from '@/contents/menu';
 import { siteMetadata } from '@/contents/siteMetadata';
-import AiLoading from '@/modules/cmdpallete/components/AiLoading';
-import AiResponses from '@/modules/cmdpallete/components/AiResponses';
-import QueryNotFound from '@/modules/cmdpallete/components/QueryNotFound';
+
 import { sendMessage } from '@/services/chatgpt';
 
 interface MenuOptionItemProps extends MenuItemProps {
@@ -322,39 +320,6 @@ const CommandPalette = () => {
                   </div>
                 ))}
               </div>
-
-              {!isEmptyState &&
-                !askAssistantClicked &&
-                queryDebounce &&
-                filterMenuOptions.every(
-                  (item) => item.children.length === 0
-                ) && (
-                  <QueryNotFound
-                    query={queryDebounce}
-                    onAskAiAssistant={handleAskAiAssistant}
-                    onFindGoogle={handleFindGoogle}
-                    handleDocsearchSelect={handleDocsearchSelect}
-                  />
-                )}
-
-              {askAssistantClicked &&
-                queryDebounce &&
-                filterMenuOptions.every(
-                  (item) => item.children.length === 0
-                ) && (
-                  <div className='max-h-80 overflow-y-auto px-8 py-7 text-neutral-700 dark:text-neutral-300'>
-                    {aiLoading ? (
-                      <AiLoading />
-                    ) : (
-                      <AiResponses
-                        response={aiResponse}
-                        isAiFinished={aiFinished}
-                        onAiFinished={() => setAiFinished(true)}
-                        onAiClose={handleAiClose}
-                      />
-                    )}
-                  </div>
-                )}
             </Combobox>
           </Transition.Child>
         </Dialog.Panel>
